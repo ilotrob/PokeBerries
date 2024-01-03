@@ -84,7 +84,7 @@ class Processor:
 
     def get_berries_info(self) -> dict:
         """Returns a dictionary of all the values adquired from the berries."""
-        if len(self.names) == 0 or len(self.growth_times) == 0:
+        if len(self.names) == 0 or len(self.growth_times) == 0 or len(self.names) != self.data["count"]:
             if not self.retrieve_data():
                 return None
         
@@ -123,7 +123,7 @@ class Processor:
 
     def get_histogram_html(self) -> str:
         """Prepares a html code with the histogram of growth times."""
-        if len(self.names) == 0 or len(self.growth_times) == 0:
+        if len(self.names) == 0 or len(self.growth_times) == 0 or len(self.names) != self.data["count"]:
             if not self.retrieve_data():
                 return None
             
@@ -134,7 +134,7 @@ class Processor:
         figure(figsize=(12,9))
         plt.hist(x, width=0.9, bins=len(bin_names))
         plt.autoscale(enable=True)
-        #plt.xticks(bin_names)
+        plt.xticks(bin_names)
         plt.savefig(tmpfile, format='png')
         encoded = base64.b64encode(tmpfile.getvalue()).decode('utf-8')
 
