@@ -32,23 +32,23 @@ Generates an histogram with the growth time values of every berry.
 
 Clone the repository locally:
 ```git
-'git clone https://github.com/ilotrob/PokeBerries.git'
+git clone https://github.com/ilotrob/PokeBerries.git
 ```
 
 Then, on the root directory, run the command:
 ```python
-'python -m pip install -r requirements.txt'
+python -m pip install -r requirements.txt
 ```
 
 ### Running the application
 From the root directory, run the following command:
 ```python
-'python -m app'
+python -m app
 ```
 
 
 ### Execute unit-tests
 From the root directory, and with the application running, execute the following command:
 ```python
-'python -m pytest'
+python -m pytest
 ```
