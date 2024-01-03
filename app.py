@@ -1,9 +1,9 @@
 from flask import Flask, Response
 from processor import Processor
 import json
-import base64
+import os
 
-URL = "https://pokeapi.co/api/v2/berry/?limit=200"
+URL = os.getenv('BERRIES_URL')
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
