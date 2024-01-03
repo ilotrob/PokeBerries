@@ -78,7 +78,7 @@ class Processor:
             print("Failed to get:")
             print(e)
 
-    def get_histogram_html(self):
+    def get_histogram_html(self) -> str:
         self.retrieve_data()
         x = self.get_growth_times()
 
