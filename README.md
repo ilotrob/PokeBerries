@@ -40,6 +40,11 @@ Then, on the root directory, run the command:
 python -m pip install -r requirements.txt
 ```
 
+The application needs an Enviromental Variable with the name of BERRIES_URL that contains the url that yields the list of all berries. It can be setup with the following command in a terminal:
+```CMD
+export BERRIES_URL=https://pokeapi.co/api/v2/berry/?limit=200
+```
+
 ### Running the application
 From the root directory, run the following command:
 ```python
