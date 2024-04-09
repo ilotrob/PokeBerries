@@ -51,6 +51,9 @@ From the root directory, run the following command:
 python -m app
 ```
 
+![GitHub All Releases](https://img.shields.io/github/downloads/lewdev/hw-gen/total)
+
+
 
 ### Execute unit-tests
 From the root directory, and with the application running, execute the following command:
